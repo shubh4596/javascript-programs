@@ -1,0 +1,14 @@
+const number = parseInt(prompt('Enter a positive integer: '));
+if (number < 0) {
+    console.log('Error!');
+}
+else if (number === 0) {
+    document.write(`The factorial of ${number} is 1.`);
+}
+else {
+    let fact = 1;
+    for (i = 1; i <= number; i++) {
+        fact *= i;
+    }
+    document.write(`The factorial of ${number} is ${fact}.`);
+}
